@@ -19,13 +19,14 @@ A terminal application to show calendar and highlight current day
 
 ### cal-js
 
-- Install dependencies
+- Run
 
   ```bash
   yarn install
+  yarn start
   ```
 
-- Build binaries
+- Build
 
   ```bash
   yarn build
