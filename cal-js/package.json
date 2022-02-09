@@ -1,0 +1,20 @@
+{
+  "name": "cal",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm run build:linux && npm run build:mac && npm run build:win",
+    "build:linux": "pkg index.js -o dist/linux/cal -t node14-linux",
+    "build:mac": "pkg index.js -o dist/macos/cal -t node14-mac",
+    "build:win": "pkg index.js -o dist/windows/cal -t node14-win",
+    "start": "node index.js"
+  },
+  "main": "index.js",
+  "author": "princejoogie",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {
+    "pkg": "^5.5.2"
+  }
+}
