@@ -1,19 +1,24 @@
 const colors = require("colors");
 
-const getNoOfDays = (date) => {
-  const copy = new Date(date);
+const getNoOfDays = (year, month) => {
+  const copy = new Date(year, month);
   copy.setMonth(copy.getMonth() + 1);
   copy.setDate(0);
   return copy.getDate();
 };
 
-const showCalendar = (noOfDays) => {
-  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec",];
-  const days = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
-  const now = new Date();
-  let current = now.getDay() - 1;
+const getWeekDay = (year, month) => {
+  const date = new Date(year, month, 1);
+  return date.getDay();
+};
 
-  process.stdout.write(`      ${months[now.getMonth()]} ${now.getFullYear()}\n`);
+const showCalendar = (year, month, day) => {
+  const noOfDays = getNoOfDays(year, month);
+  const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",];
+  const days = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
+  let current = getWeekDay(year, month);
+
+  process.stdout.write(`      ${months[month]} ${year}\n`);
   for (d in days) process.stdout.write(`${days[d]} `);
   process.stdout.write("\n" + "   ".repeat(current));
 
@@ -22,7 +27,7 @@ const showCalendar = (noOfDays) => {
 
     let str = ` ${i + 1} `;
     if (i >= 9) str = `${i + 1} `;
-    if (i + 1 === now.getDate()) str = colors.bgWhite.black(str);
+    if (i + 1 === day) str = colors.bgWhite.black(str);
 
     process.stdout.write(str);
   }
@@ -30,9 +35,8 @@ const showCalendar = (noOfDays) => {
 };
 
 const main = () => {
-  const temp = new Date();
-  const daysInMonth = getNoOfDays(temp);
-  showCalendar(daysInMonth);
+  const now = new Date();
+  showCalendar(now.getFullYear(), now.getMonth(), now.getDate());
 };
 
 main();
