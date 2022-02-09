@@ -14,11 +14,9 @@ Different implementations of a terminal application that shows a calendar and hi
 
 ## Developing
 
-- Clone the repository
-
-  ```bash
-  git clone https://github.com/princejoogie/cal.git
-  ```
+```bash
+git clone https://github.com/princejoogie/cal.git
+```
 
 ### C++ implementation
 
