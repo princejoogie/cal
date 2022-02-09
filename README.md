@@ -1,15 +1,13 @@
 # cal
 
-Show the calendar with current day highlighted in your terminal
+A terminal application to show calendar and highlight current day
 
-> ⚠️ Bloated Version ⚠️
-> Written in javascript so binaries include node runtime
+## Implementations
 
-![image](sc.jpg)
-
-## Usage
-
-- Download the binaries in [release](https://github.com/princejoogie/cal-js/releases/) section
+| Language   |          Size |
+| ---------- | ------------: |
+| JavaScript | 👀 **30.06kb** |
+| Rust       |   **165.5kb** |
 
 ## Developing
 
@@ -18,6 +16,8 @@ Show the calendar with current day highlighted in your terminal
   ```bash
   git clone https://github.com/princejoogie/cal.git
   ```
+
+### cal-js
 
 - Install dependencies
 
@@ -33,9 +33,23 @@ Show the calendar with current day highlighted in your terminal
   yarn build:{win|mac|linux} # eg yarn build:win
   ```
 
+### cal-rust
+
+- Run
+
+  ```bash
+  Cargo run
+  ```
+
+- Build (optimized)
+
+  ```bash
+  cargo build --release
+  ```
+
 ## Contributing
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md)
+Feel free to open a PR if you would like to add an implementation in another language
 
 Like the project? would appreciate a coffee ☕
 
