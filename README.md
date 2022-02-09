@@ -20,54 +20,44 @@ A terminal application to show calendar and highlight current day
   git clone https://github.com/princejoogie/cal.git
   ```
 
-### cal-cpp
+### C++ implementation
 
-- Run
+```bash
+# Run
+make && make run
 
-  ```bash
-  make && make run
-  ```
+# Build
+make
+```
 
-- Build
+### JavaScript implementation
 
-  ```bash
-  make
-  ```
+```bash
+# Run
+yarn start
 
-### cal-js
+# Build
+yarn build
 
-- Run
+# Targeted build
+yarn build:(win|mac|linux)
+```
 
-  ```bash
-  yarn install
-  yarn start
-  ```
+### Rust implementation
 
-- Build
+```bash
+# Run
+Cargo run
 
-  ```bash
-  yarn build
-  # or build for specific targets
-  yarn build:{win|mac|linux} # eg yarn build:win
-  ```
-
-### cal-rust
-
-- Run
-
-  ```bash
-  Cargo run
-  ```
-
-- Build
-
-  ```bash
-  cargo build --release
-  ```
+# Build
+cargo build --release
+```
 
 ## Contributing
 
 Feel free to open a PR if you would like to add an implementation in another language
+
+Or submit an issue if any.
 
 Like the project? would appreciate a coffee ☕
 
