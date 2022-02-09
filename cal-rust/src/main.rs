@@ -1,4 +1,4 @@
-use chrono::{Datelike, NaiveDate};
+use chrono::prelude::{DateTime, Datelike, Local, NaiveDate};
 
 fn get_no_of_days(year: i32, month: u32) -> i64 {
     NaiveDate::from_ymd(
@@ -16,7 +16,7 @@ fn get_no_of_days(year: i32, month: u32) -> i64 {
     .num_days()
 }
 
-fn show_calendar(no_of_days: i64, today: chrono::DateTime<chrono::Utc>) {
+fn show_calendar(no_of_days: i64, today: DateTime<Local>) {
     let months: [&str; 12] = [
         "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
     ];
@@ -44,7 +44,7 @@ fn show_calendar(no_of_days: i64, today: chrono::DateTime<chrono::Utc>) {
 }
 
 fn main() {
-    let temp = chrono::Utc::now();
+    let temp = Local::now();
     let year = temp.year();
     let month = temp.month();
     show_calendar(get_no_of_days(year, month), temp);
