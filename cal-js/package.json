@@ -11,9 +11,7 @@
   "main": "index.js",
   "author": "princejoogie",
   "license": "MIT",
-  "dependencies": {
-    "colors": "^1.4.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "pkg": "^5.5.2"
   }
