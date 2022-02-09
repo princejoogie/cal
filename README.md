@@ -6,8 +6,9 @@ A terminal application to show calendar and highlight current day
 
 | Language   |          Size |
 | ---------- | ------------: |
-| JavaScript | 👀 **30.06kb** |
-| Rust       |   **165.5kb** |
+| C++        |   **149.2kb** |
+| JavaScript | 🤣 **29.98mb** |
+| Rust       |   **163.5kb** |
 
 ## Developing
 
@@ -15,6 +16,20 @@ A terminal application to show calendar and highlight current day
 
   ```bash
   git clone https://github.com/princejoogie/cal.git
+  ```
+
+### cal-cpp
+
+- Run
+
+  ```bash
+  make && make run
+  ```
+
+- Build
+
+  ```bash
+  make
   ```
 
 ### cal-js
@@ -42,7 +57,7 @@ A terminal application to show calendar and highlight current day
   Cargo run
   ```
 
-- Build (optimized)
+- Build
 
   ```bash
   cargo build --release
