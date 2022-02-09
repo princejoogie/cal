@@ -1,6 +1,6 @@
 # cal
 
-A collection of implementation of a terminal application that shows a calendar and highlights the current day in different programming languages
+Different implementations of a terminal application that shows a calendar and highlights the current day in different programming languages
 
 ## Implementations
 
