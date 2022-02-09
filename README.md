@@ -24,7 +24,7 @@ A terminal application to show calendar and highlight current day
 
 ```bash
 # Run
-make && make run
+make run
 
 # Build
 make
