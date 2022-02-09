@@ -26,7 +26,8 @@ int getWeekDay(int y, int m, int d) {
 
 void showCalendar(int year, int month, int day) {
   int noOfDays = getNoOfDays(year, month);
-  string months[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+  string months[] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                     "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
   string days[] = {"Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"};
   int current = getWeekDay(year, month, 1);
 

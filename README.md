@@ -10,6 +10,8 @@ A terminal application to show calendar and highlight current day
 | JavaScript | 🤣 **29.98mb** |
 | Rust       |   **163.5kb** |
 
+![img](sc.jpg)
+
 ## Developing
 
 - Clone the repository
